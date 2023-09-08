@@ -26,14 +26,14 @@ default mariepoint = 0
 default sethpoint = 0
 
 #Defining variables
-$ convoWithLucid = False
-$ phone = False
-$ marieList = False
-$ pretzel = False
-$ concerned = False
-$ illConsiderIt = False
-$ regret = False
-$ check = False
+define convoWithLucid = False
+define phone = False
+define marieList = False
+define pretzel = False
+define concerned = False
+define illConsiderIt = False
+define regret = False
+define check = False
 
 
 # The game starts here.
