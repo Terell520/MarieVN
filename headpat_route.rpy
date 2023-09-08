@@ -162,9 +162,8 @@ label start:
     s "Ah, much better!"
 
     "After looking at the mirror, I went to the kitchen."
-    if phone == True:
+    if phone:
         jump kitchen_with_phone
-
     else:
         jump kitchen_no_phone
 
@@ -262,9 +261,8 @@ menu:
         
         "Though I'm a bit curious about what Marie has planned. I say goodbye to Lucid and left the house."
 
-        if convoWithLucid == True:
+        if convoWithLucid:
             jump outside
-
         else: 
             jump kitchen_no_phone
     
@@ -274,9 +272,8 @@ menu:
     
         "I say goodbye to Lucid and left the house."
         
-        if convoWithLucid == True:
+        if convoWithLucid:
             jump outside
-
         else: 
             jump kitchen_no_phone
 
@@ -519,7 +516,7 @@ menu:
 
         "After admiring the clothes in the store, I leave and went outside of the mall."
 
-        if illConsiderIt == True:
+        if illConsiderIt:
             jump lucid_encounter
         else:
             jump mall_outside
@@ -603,9 +600,9 @@ menu:
 
         "After wondering about Marie's shopping items, I leave out of the mall."
 
-        if illConsiderIt == True:
+        if illConsiderIt:
             jump lucid_encounter
-        elif illConsiderIt == False:
+        else:
             jump mall_outside
 
 label lucid_encounter:
@@ -932,7 +929,7 @@ label home:
 
     if sethpoint >= 6:
         jump shadowlord
-    elif sethpoint <= 6:
+    else:
         jump knocked_out
 
 label shadowlord:
@@ -1524,9 +1521,9 @@ label dinner:
 
     "Headpat route: End"
 
-    if check == True:
+    if check:
         jump headpat_end_extra
-    elif check == False:
+    else:
         jump before_main_menu
 
 label headpat_end_extra:
